@@ -1,0 +1,8 @@
+.page {
+  font: 100%/1.5 sans-serif;
+  color: #333;
+}
+
+.page__body {
+  margin: 0;
+}

@@ -1,0 +1,18 @@
+@component('components/page/index.edge', {
+  lang: 'en'
+})
+  @slot('styles')
+    @!rawInclude(components/button/button.css)
+    @!rawInclude(components/page/page.css)
+  @endslot
+
+  @slot('title')
+    {{ title }}
+  @endslot
+
+  @slot('header')
+    <h1>{{ title }}</h1>
+  @endslot
+
+  {{{ content }}}
+@endcomponent

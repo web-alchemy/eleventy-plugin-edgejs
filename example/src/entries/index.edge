@@ -1,0 +1,40 @@
+---
+layout: main.edge
+permalink: /
+title: Edge.js
+items:
+  - a
+  - b
+  - c
+  - d
+---
+<h1>Hello, {{ title }}</h1>
+
+<ul>
+  @each(item in items)
+    <li>{{ item }}</li>
+  @end
+</ul>
+
+{{ inspect({ test: 'test' }) }}
+
+{{{ nl2br('test\ntest') }}}
+
+<p>rendered via `edge-supercharged`:</p>
+
+@button.index({ type: 'button' })
+  click
+@endbutton.index
+
+or
+
+@button.index({ type: 'button' })
+  click
+@endbutton.index
+
+or
+
+{{--  path is relative to `config.dir.input`  --}}
+@component('components/button/index', { type: 'button' })
+  click
+@endcomponent

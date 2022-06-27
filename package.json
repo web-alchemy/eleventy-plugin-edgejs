@@ -1,0 +1,39 @@
+{
+  "name": "@web-alchemy/eleventy-plugin-edgejs",
+  "version": "0.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "postpublish": "git push origin --all; git push origin --tags",
+    "postversion": "npm publish",
+    "preversion": "npm test",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-alchemy/eleventy-plugin-edgejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/web-alchemy/eleventy-plugin-edgejs/issues"
+  },
+  "homepage": "https://github.com/web-alchemy/eleventy-plugin-edgejs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "edge-supercharged": "^3.1.1",
+    "edge.js": "^5.3.6"
+  },
+  "peerDependencies": {
+    "@11ty/eleventy": "*"
+  },
+  "keywords": [
+    "eleventy",
+    "eleventy-plugin",
+    "edge",
+    "edge.js",
+    "adonis",
+    "adonisjs",
+    "template engine"
+  ]
+}
