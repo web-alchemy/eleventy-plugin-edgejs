@@ -1,6 +1,6 @@
 # Eleventy Plugin that adds support Edge.js template engine
 
-This plugin allows to use Edge.js as template engine for Eleventy.
+This plugin allows to use [Edge.js]((https://github.com/edge-js/edge/)) as template engine for [Eleventy](https://11ty.dev).
 
 ## Installation
 
@@ -62,3 +62,4 @@ If options has `createEdgeInstance` function, then `extendEdgeInstance` will be 
 - [Edge.js Github Repo](https://github.com/edge-js/edge/)
 - [Edge.js docs](https://docs.adonisjs.com/guides/views/introduction)
 - [Edge.js references](https://docs.adonisjs.com/reference/views/globals/inspect)
+- [Eleventy](https://11ty.dev)
